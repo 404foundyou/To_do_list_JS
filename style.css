@@ -1,0 +1,56 @@
+body{
+            background-color: #1e1e1e;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            background-color: #282828;
+            padding: 10px;
+        }
+        .task{
+            
+        }
+        input{
+            padding: 10px;
+            background-color: rgb(67, 63, 63);
+            border: none;
+            outline: none;
+            color: white;
+            border-radius: 5px;
+        }
+        button{
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            border: none;
+            font: white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: rgb(110, 0, 110);
+            cursor: pointer;
+        }
+        h2{
+            text-align: center;
+        }
+
+        .delete{
+            background-color: rgb(169, 18, 18);
+            margin-right: 5px;
+        }
+        ul{
+            padding: 0;
+            
+        }
+        li{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            background-color: rgb(64, 61, 61);
+            margin-bottom: 5px;
+        }
