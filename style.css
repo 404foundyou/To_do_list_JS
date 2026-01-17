@@ -62,3 +62,10 @@ body{
             background-color: rgb(64, 61, 61);
             margin-bottom: 5px;
         }
+        .completed{
+            text-decoration: line-through;
+            opacity: 5;
+            background-color: rgb(89, 86, 86);
+            
+            
+        }
