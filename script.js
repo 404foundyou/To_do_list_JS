@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
     tasks.forEach(task => rendertask(task));
-    
-    addtaskbtn.addEventListener('click',()=>{
+
+    function add_new_task(){
         const task_text = todoinput.value.trim();
         if(task_text === "") return;  
         
@@ -22,8 +22,15 @@ document.addEventListener('DOMContentLoaded',()=>{
         rendertask(new_task);
         todoinput.value = "" ; // clear input
         console.log(tasks);
-        
-    });
+    }
+    
+    addtaskbtn.addEventListener('click', add_new_task);
+    todoinput.addEventListener('keydown',(e)=>{
+        if(e.key === "Enter"){
+            add_new_task();
+        }
+    })
+
     
 
     function rendertask(task){
