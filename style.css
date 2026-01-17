@@ -21,15 +21,14 @@ body{
             color: white;
             border-radius: 5px;
         }
-        button{
+        #add_task_btn{
             background-color: purple;
             color: white;
             padding: 10px;
             border: none;
-            font: white;
             border-radius: 5px;
         }
-        button:hover{
+        #add_task_btn:hover{
             background-color: rgb(110, 0, 110);
             cursor: pointer;
         }
@@ -37,9 +36,18 @@ body{
             text-align: center;
         }
 
-        .delete{
+        button{
             background-color: rgb(169, 18, 18);
             margin-right: 5px;
+            border: none;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            
+        }
+        button:hover{
+            background-color: rgb(122, 7, 7);
+            cursor: pointer;
         }
         ul{
             padding: 0;
